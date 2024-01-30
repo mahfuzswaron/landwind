@@ -9,8 +9,37 @@
         rel="stylesheet" />
     <!-- tailwindcss link  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #mobile-menu {
+            position: absolute;
+            width: 100%;
+            left: -100%;
+        }
+
+        #menu-toggle:checked~#mobile-menu {
+            left: 0;
+        }
+    </style>
     <title>Landwind</title>
 </head>
+
+
+
+<!-- 
+    
+Responsive toggle menu implementation:
+
+1. 1 ta checkbox thakbe (hidden)
+2. Checkbox ke control korar jonno 1 ta label thakbe
+3. Menu icon ta label er moddhe thakbe
+
+4. Mobile menu & checkbox same container er moddhe thakbe
+5. mobile menu er position absolute hobe ebong left e -100% thakbe.
+6. Checkbox ta checked (on) thakle mobile menu er position left e 0 te thakbe
+-100% thakbe. 
+
+-->
+
 
 <body class="font-['Inter']">
     <header class="px-5 lg:px-16 xl:px-20 py-10 flex  items-center justify-between">
@@ -31,14 +60,23 @@
             </nav>
         </div>
 
+        <label class="lg:hidden" for="menu-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </label>
+
         <div class=" gap-5 items-center hidden lg:flex">
             <a href="">Log in</a>
             <button class="px-4 py-2 bg-purple-600 text-white rounded-lg">Get Started</button>
         </div>
     </header>
 
+    <input class="hidden" type="checkbox" id="menu-toggle">
+
     <!-- smaller device menu  -->
-    <div class="lg:hidden text-center">
+    <div id="mobile-menu" class="lg:hidden text-center bg-gray-200">
         <nav class="">
             <ul class="flex flex-col gap-5">
                 <li><a href="#">Company</a></li>
