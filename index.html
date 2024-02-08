@@ -19,6 +19,10 @@
         #menu-toggle:checked~#mobile-menu {
             left: 0;
         }
+
+        details>summary {
+            list-style: none;
+        }
     </style>
     <title>Landwind</title>
 </head>
@@ -275,35 +279,162 @@ Responsive toggle menu implementation:
     </section>
 
     <!-- pricing section  -->
-    <section class="px-5 py-28 lg:px-16 xl:px-20 my-32">
-        <h3 class="text-4xl text-center font-extrabold">Pay as you grow</h3>
-        <p class="text-xl text-center max-w-[55vw] mx-auto my-5">
+    <section class="px-5 py-5 lg:px-16 xl:px-20 my-32">
+        <h3 class="text-2xl sm:text-4xl text-center font-extrabold">Pay as you grow</h3>
+        <p class="text-sm sm:text-xl text-center max-w-[90vw] sm:max-w-[55vw] mx-auto my-5">
             Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value
             and drive
             economic growth.
         </p>
 
-        <div class="grid grid-cols-3 gap-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- card 1  -->
-            <div class="">
-                <h4>Starter</h4>
-                <p>Great for personal use and for your side projects.</p>
-                <p>
-                    <span>$49</span>
-                    <span>/month</span>
+            <div class="border rounded-lg shadow p-8 space-y-8">
+                <h4 class="text-center text-2xl font-medium ">Starter</h4>
+                <p class="text-center text-lg">Great for personal use and for your side projects.</p>
+                <p class="text-center ">
+                    <span class="text-5xl font-extrabold">$49</span>
+                    <span class="text-gray-600">/month</span>
                 </p>
-                <ul>
-                    <li>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
                         <img src="./images/icons/check.svg" alt="">
                         <span>Individual configuration</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>No setup, monthly, or hidden fees</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Team size: <b>1 developer</b></span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Premium support: <b>6 months</b></span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Free updates: <b>6 months</b></span>
                     </li>
 
                 </ul>
 
-                <button>
+                <button class="px-3 py-2 sm:px-5 sm:py-3 bg-purple-600 text-white rounded-lg text-xs sm:text-lg w-full">
                     Get started
                 </button>
             </div>
+            <!-- card 1  -->
+            <div class="border rounded-lg shadow p-8 space-y-8">
+                <h4 class="text-center text-2xl font-medium ">Starter</h4>
+                <p class="text-center text-lg">Great for personal use and for your side projects.</p>
+                <p class="text-center ">
+                    <span class="text-5xl font-extrabold">$49</span>
+                    <span class="text-gray-600">/month</span>
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Individual configuration</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>No setup, monthly, or hidden fees</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Team size: <b>1 developer</b></span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Premium support: <b>6 months</b></span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Free updates: <b>6 months</b></span>
+                    </li>
+
+                </ul>
+
+                <button class="px-3 py-2 sm:px-5 sm:py-3 bg-purple-600 text-white rounded-lg text-xs sm:text-lg w-full">
+                    Get started
+                </button>
+            </div>
+            <!-- card 1  -->
+            <div class="border rounded-lg shadow p-8 space-y-8">
+                <h4 class="text-center text-2xl font-medium ">Starter</h4>
+                <p class="text-center text-lg">Great for personal use and for your side projects.</p>
+                <p class="text-center ">
+                    <span class="text-5xl font-extrabold">$49</span>
+                    <span class="text-gray-600">/month</span>
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Individual configuration</span>
+                        /*
+                        details summary::-webkit-details-marker {
+                        display: none;
+                        }
+                        */
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>No setup, monthly, or hidden fees</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Team size: <b>1 developer</b></span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Premium support: <b>6 months</b></span>
+                    </li>
+                    <li class="flex gap-3">
+                        <img src="./images/icons/check.svg" alt="">
+                        <span>Free updates: <b>6 months</b></span>
+                    </li>
+
+                </ul>
+
+                <button class="px-3 py-2 sm:px-5 sm:py-3 bg-purple-600 text-white rounded-lg text-xs sm:text-lg w-full">
+                    Get started
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="px-5 lg:px-16 xl:px-20 my-32">
+        <h3 class="text-4xl font-extrabold text-center">
+            Frequently asked questions
+        </h3>
+        <div class="max-w-[55vw] mx-auto">
+            <!-- details 1 -->
+            <details open>
+                <summary class="flex justify-between py-4">
+                    <p class="text-xl">Can I use FlowBite in open-source projects?</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                    </svg>
+                </summary>
+                <div class="py-4 border-y-2 text-lg">
+                    <p>
+                        Generally, it is accepted to use FlowBite in open-source projects, as long as it is not a UI
+                        library, a theme, a
+                        template, a page-builder that would be considered as an alternative to FlowBite itself.
+                    </p>
+                    <p>With that being said, feel free to use this design kit for your open-source projects.</p>
+                    <p>
+                        Find out more information by
+                        <a class="text-purple-600" href="#">reading the license.</a>
+                    </p>
+                </div>
+            </details>
+
         </div>
 
     </section>
